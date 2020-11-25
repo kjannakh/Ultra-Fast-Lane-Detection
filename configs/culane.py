@@ -1,10 +1,10 @@
 # DATA
 dataset='CULane'
-data_root = None
+data_root = '../../CULane'
 
 # TRAIN
 epoch = 50
-batch_size = 32
+batch_size = 8
 optimizer = 'SGD'  #['SGD','Adam']
 learning_rate = 0.1
 weight_decay = 1e-4
@@ -28,15 +28,15 @@ shp_loss_w = 0.0
 # EXP
 note = ''
 
-log_path = None
+log_path = '../logs'
 
 # FINETUNE or RESUME MODEL PATH
 finetune = None
 resume = None
 
 # TEST
-test_model = None
-test_work_dir = None
+test_model = '../logs/20201124_220223_lr_1e-01_b_8/ep004.pth'
+test_work_dir = '../tmp'
 
 num_lanes = 4
 
